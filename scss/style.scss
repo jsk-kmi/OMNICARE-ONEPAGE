@@ -1146,8 +1146,13 @@ section {
     .map {
       overflow: hidden;
     }
-    .root_daum_roughmap .wrap_controllers {
-      display: none;
+    .root_daum_roughmap {
+      .wrap_map {
+        height: 500px;
+      }
+      .wrap_controllers {
+        display: none;
+      }
     }
   }
 }
@@ -1251,9 +1256,6 @@ $contact-list: (
 
 // + partners
 .section-partners {
-  .container {
-  }
-
   .section-title {
     text-align: center;
     > h2 {
@@ -1265,14 +1267,6 @@ $contact-list: (
   }
 
   .swiper-sub-container {
-    // height: 300px;
-    // overflow: hidden;
-    // display: flex;
-    // align-items: center;
-    // margin: {
-    //   left: -20px;
-    //   right: -20px;
-    // }
     height: auto;
     overflow: hidden;
     margin: 0 auto;

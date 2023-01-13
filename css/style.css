@@ -1111,6 +1111,9 @@ header.header .contents-wrap {
 .section-contact .map-container .map {
   overflow: hidden;
 }
+.section-contact .map-container .root_daum_roughmap .wrap_map {
+  height: 500px;
+}
 .section-contact .map-container .root_daum_roughmap .wrap_controllers {
   display: none;
 }

@@ -23,6 +23,8 @@
 	<link rel="apple-touch-icon" sizes="152x152" href="./img/apple-touch-icon-152x152.png" />
 	<link rel="apple-touch-icon" sizes="167x167" href="./img/apple-touch-icon-167x167.png" />
 	<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon-180x180.png" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="lib/swiper/swiper-bundle.min.css" rel="stylesheet">
@@ -84,7 +86,7 @@
 		<section id="about" class="section section-about" style="overflow: hidden;">
 			<div class="container">
 
-				<div class="section-title">
+				<div class="section-title" data-aos="fade-up">
 					<h2>About Us</h2>
 					<p class="sub-cont">기업에서 시행 중인 임직원 및 가족의 건강 검진 복지 사업을 검진 컨설팅부터 예약 시스템 제공, 운영 및 관리 지원, 정산과 사후 관리를 위탁 받아 Total로
 						편리하고 안정적으로 진행할 수
@@ -104,7 +106,7 @@
 				</div>
 
 			</div>
-			<div class="container core-value">
+			<div class="container core-value" data-aos="fade-up">
 				<div class="row">
 					<div class="col-lg-6 order-2 order-lg-1 col col-txt">
 						<h3 class="skip">핵심 가치</h3>
@@ -172,14 +174,14 @@
 
 		<section id="solution" class="section section-solution">
 			<div class="container">
-				<div class="section-title">
+				<div class="section-title" data-aos="fade-up">
 					<h2>Solution</h2>
 					<p class="sub-cont">다양해진 임직원의 Needs, 그리고 고령화 시대에 필수적으로 자리 잡은 건강관리 점점 복잡해지고 나날이 늘어만 가는 검진 관리 업무에 대한 기업 담당자의
 						어려움을 들었습니다.</p>
 				</div>
 
 				<div class="row boxs">
-					<div class="col-lg-4 col-md-12">
+					<div class="col-lg-4 col-md-12" data-aos="zoom-in" data-aos-delay="50">
 						<div class="box">
 							<i></i>
 							<h4>우리 기업의 특수성 <br>반영이 어려움</h4>
@@ -191,7 +193,7 @@
 						</div>
 					</div>
 
-					<div class="col-lg-4 col-md-12">
+					<div class="col-lg-4 col-md-12" data-aos="zoom-in" data-aos-delay="400">
 						<div class="box">
 							<i></i>
 							<h4>기관과의 소통과 실시간 <br> 현황 파악의 어려움</h4>
@@ -203,7 +205,7 @@
 						</div>
 					</div>
 
-					<div class="col-lg-4 col-md-12">
+					<div class="col-lg-4 col-md-12" data-aos="zoom-in" data-aos-delay="800">
 						<div class="box">
 							<i></i>
 							<h4>우리 기업에 적합한<br>
@@ -221,14 +223,14 @@
 
 		<section id="services" class="section section-services">
 			<div class="container">
-				<div class="section-title">
+				<div class="section-title" data-aos="fade-up">
 					<h2>Healthcare Service Platform</h2>
 					<p class="sub-cont">기업에서 시행 중인 임직원 및 가족의 건강검진 복지 사업을 검진 컨설팅부터 예약, 운영 및 관리 그리고 정산과 사후관리를 위탁 받아 Total로 서비스하는
 						개념입니다.</p>
 				</div>
 
 				<div class="row">
-					<div class="col-lg-6 col-md-6 col-info">
+					<div class="col-lg-6 col-md-6 col-info" data-aos="fade-right" data-aos-delay="50">
 						<div class="info-box">
 							<h4># 건강검진 컨설팅</h4>
 							<h5 class="intro">검진기관 선정부터 항목 검토까지 고객사에 맞춤형 검진 컨설팅 제공</h5>
@@ -238,7 +240,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-6 col-info">
+					<div class="col-lg-6 col-md-6 col-info" data-aos="fade-left" data-aos-delay="50">
 						<div class="info-box">
 							<h4># 예약시스템</h4>
 							<h5 class="intro">효율성과 편의성을 극대화한 온라인, 모바일 예약 서비스 제공</h5>
@@ -248,7 +250,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-6 col-info">
+					<div class="col-lg-6 col-md-6 col-info" data-aos="fade-right" data-aos-delay=" 50">
 						<div class="info-box">
 							<h4># 운영,관리지원</h4>
 							<h5 class="intro">운영 및 관리 지원을 위한 관리자 페이지 제공 및 고객만족팀 운영</h5>
@@ -258,7 +260,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-6 col-info">
+					<div class="col-lg-6 col-md-6 col-info" data-aos="fade-left" data-aos-delay="50">
 						<div class="info-box">
 							<h4># 정산 및 사후관리</h4>
 							<h5 class="intro">통합 검진 정산 및 회사 보관용 자료 통합 관리 제공</h5>
@@ -551,6 +553,7 @@
 	<script charset="UTF-8" class="daum_roughmap_loader_script"
 		src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 	<script>
+		AOS.init({ once: true, duration: 600 });
 		const swiper = new Swiper(".partnerSwiper", {
 			slidesPerView: 'auto',
 			autoplay: true,
