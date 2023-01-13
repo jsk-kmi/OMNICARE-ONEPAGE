@@ -1408,7 +1408,6 @@ header.header .contents-wrap {
   }
 }
 .section-introduce {
-  background-attachment: scroll;
   padding: 9rem 0;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/introduce_bg.jpg") fixed center center/cover;
 }
@@ -1425,10 +1424,16 @@ header.header .contents-wrap {
 }
 .section-introduce .section-title .sub-cont {
   margin-top: 0.75rem;
+  margin-bottom: 0;
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.5555555556;
   letter-spacing: -0.025rem;
+}
+@media screen and (max-width: 768px) {
+  .section-introduce {
+    padding: 5rem 0;
+  }
 }
 
 #navbar.menu-open {
