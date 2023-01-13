@@ -99,6 +99,7 @@ h6 {
 html {
   text-size-adjust: none;
 }
+
 html,
 body {
   height: 100%;
@@ -111,8 +112,6 @@ body {
   color: $g-font-color;
 }
 
-body {
-}
 h1,
 h2,
 h3,
@@ -494,6 +493,7 @@ section {
   &.section-visual {
     @include breakpoint(sm) {
       height: -webkit-fill-available;
+      height: 100%;
       .main-video {
         height: 100%;
         height: -webkit-fill-available;

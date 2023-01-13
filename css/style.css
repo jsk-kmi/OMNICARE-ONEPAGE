@@ -479,6 +479,7 @@ header.header .contents-wrap {
 @media screen and (max-width: 576px) {
   section.section-visual {
     height: -webkit-fill-available;
+    height: 100%;
   }
   section.section-visual .main-video {
     height: 100%;
