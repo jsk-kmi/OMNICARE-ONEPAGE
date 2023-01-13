@@ -1408,6 +1408,7 @@ header.header .contents-wrap {
   }
 }
 .section-introduce {
+  background-attachment: scroll;
   padding: 9rem 0;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/introduce_bg.jpg") fixed center center/cover;
 }
