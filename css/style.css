@@ -119,7 +119,7 @@ a {
 }
 
 * {
-  touch-action: manipulation;
+  touch-action: manipulation; text-size-adjust : none
 }
 
 h1,
