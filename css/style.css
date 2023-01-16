@@ -1084,14 +1084,13 @@ header.header .contents-wrap {
 }
 .optimized-list .accordion-panel > ul li:before {
   content: "";
+  position: absolute;
+  top: 0.6875rem;
+  left: 0;
   width: 0.25rem;
   height: 0.25rem;
   border-radius: 50%;
-  background-color: #939393;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+  background-color: #999;
 }
 .optimized-list .accordion-panel > ul li ~ li {
   margin-top: 0.25rem;
