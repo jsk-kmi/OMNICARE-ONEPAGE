@@ -23,21 +23,22 @@
     }
   };
 
-  // + preloader
+  // + mobilde preloader
+
   let preloader = select('#preloader');
-  document.addEventListener('DOMContentLoaded', function () {
-    if (matchMedia('screen and (max-width: 992px)').matches) {
-      if (preloader) {
-        select('html').classList.add('scroll-prevent');
-        preloader.classList.add('show');
-        setTimeout(() => {
-          preloader.remove();
-          select('html').classList.remove('scroll-prevent');
-          console.log(1);
-        }, 2000);
-      }
+  // video.removeAttribute('controls');
+  if (matchMedia('screen and (max-width: 992px)').matches) {
+    select('.main-video').style.opacity = 0;
+    if (preloader) {
+      select('html').classList.add('scroll-prevent');
+      preloader.classList.add('show');
+      setTimeout(() => {
+        preloader.remove();
+        select('html').classList.remove('scroll-prevent');
+        select('.main-video').style.opacity = 1;
+      }, 2000);
     }
-  });
+  }
 
   // + scroll
   const onscroll = (el, listener) => {
