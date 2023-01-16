@@ -793,10 +793,6 @@ section {
     @include txtTitleSmall;
     color: $color-white-100;
     margin-bottom: 0.5rem;
-
-    @include breakpoint(sm) {
-      font-size: 14px;
-    }
   }
 
   .missionSwiper {

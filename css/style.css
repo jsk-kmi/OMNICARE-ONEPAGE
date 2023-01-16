@@ -766,11 +766,6 @@ header.header .contents-wrap {
   color: #fff;
   margin-bottom: 0.5rem;
 }
-@media screen and (max-width: 576px) {
-  .section-mission h3 {
-    font-size: 14px;
-  }
-}
 .section-mission .missionSwiper {
   margin-top: 0.5rem;
 }
