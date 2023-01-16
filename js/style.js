@@ -24,9 +24,7 @@
   };
 
   // + mobilde preloader
-
   let preloader = select('#preloader');
-  // video.removeAttribute('controls');
   if (matchMedia('screen and (max-width: 992px)').matches) {
     select('.main-video').style.opacity = 0;
     if (preloader) {
@@ -46,7 +44,6 @@
   };
 
   // + navigation Scroll
-  // navigation Scroll
   let navbarlinks = select('#navbar .scrollto', true);
   const navbarlinksActive = () => {
     let position = window.scrollY + 200;

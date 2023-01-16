@@ -1,6 +1,5 @@
 @charset "utf-8";
 @import 'variables';
-@import 'responsive';
 
 // = reset
 html,
@@ -462,6 +461,7 @@ header.header {
       right: 0;
     }
   }
+
   &.header-scrolled,
   &.header-inner-pages {
     background: rgba(40, 40, 40, 0.9);
@@ -538,6 +538,7 @@ section {
 
     // mq_
     @include breakpoint(lg) {
+      max-width: 100%;
       padding: {
         left: 1rem;
         right: 1rem;
@@ -792,6 +793,10 @@ section {
     @include txtTitleSmall;
     color: $color-white-100;
     margin-bottom: 0.5rem;
+
+    @include breakpoint(sm) {
+      font-size: 14px;
+    }
   }
 
   .missionSwiper {
@@ -823,6 +828,9 @@ section {
         opacity: 0;
         @include breakpoint(md) {
           font-size: 20px;
+        }
+        @include breakpoint(sm) {
+          font-size: 16px;
         }
       }
       &.swiper-slide-active {

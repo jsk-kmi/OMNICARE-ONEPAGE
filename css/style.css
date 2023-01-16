@@ -34,11 +34,6 @@
   font-style: normal;
   src: url("../fonts/NotoSansKR-Black.woff") format("woff"), url("../fonts/NotoSansKR-Black.woff2") format("woff2"), url("../fonts/NotoSansKR-Black.otf") format("opentype");
 }
-@media screen and (max-width: 992px) {
-  header.header .container {
-    max-width: 100%;
-  }
-}
 html,
 body,
 div,
@@ -119,7 +114,7 @@ a {
 }
 
 * {
-  touch-action: manipulation; text-size-adjust : none
+  touch-action: manipulation;
 }
 
 h1,
@@ -532,6 +527,7 @@ header.header .contents-wrap {
 }
 @media screen and (max-width: 992px) {
   .section-visual .container {
+    max-width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -770,6 +766,11 @@ header.header .contents-wrap {
   color: #fff;
   margin-bottom: 0.5rem;
 }
+@media screen and (max-width: 576px) {
+  .section-mission h3 {
+    font-size: 14px;
+  }
+}
 .section-mission .missionSwiper {
   margin-top: 0.5rem;
 }
@@ -791,6 +792,11 @@ header.header .contents-wrap {
 @media screen and (max-width: 768px) {
   .section-mission .missionSwiper .swiper-slide p {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-mission .missionSwiper .swiper-slide p {
+    font-size: 16px;
   }
 }
 .section-mission .missionSwiper .swiper-slide.swiper-slide-active p {
