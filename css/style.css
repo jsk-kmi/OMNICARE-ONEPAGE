@@ -582,6 +582,9 @@ header.header .contents-wrap {
   position: relative;
 }
 
+.section-about {
+  overflow: hidden;
+}
 .section-about .section-title h2 p + p {
   margin-top: 1.25rem;
 }
