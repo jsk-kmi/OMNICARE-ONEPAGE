@@ -145,5 +145,3 @@
     select('.header').classList.toggle('menu-opened');
   });
 })();
-
-webview.getSettings().setTextZoom(100);
