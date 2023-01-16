@@ -791,7 +791,7 @@ section {
   text-align: center;
 
   h3 {
-    @include txtTitleSmall;
+    @include txtTitleMiddle;
     color: $color-white-100;
     margin-bottom: 0.5rem;
   }

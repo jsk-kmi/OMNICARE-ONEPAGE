@@ -763,8 +763,9 @@ header.header .contents-wrap {
   text-align: center;
 }
 .section-mission h3 {
-  font-size: 1.25rem;
-  line-height: 1.4;
+  font-size: 1.4375rem;
+  font-weight: 500;
+  line-height: 1.3913043478;
   letter-spacing: -0.0375rem;
   color: #fff;
   margin-bottom: 0.5rem;
