@@ -1058,16 +1058,12 @@ header.header .contents-wrap {
 .optimized-list > ul > li > a.collapsed .icon-close {
   display: block;
 }
-.optimized-list > ul > li a[aria-expanded=false] {
-  padding-bottom: 0;
-}
 .optimized-list > ul > li a[aria-expanded=true] {
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.5555555556;
   letter-spacing: -0.025rem;
   color: #03b29e;
-  padding-bottom: 1.25rem;
 }
 .optimized-list > ul > li a[aria-expanded=true]:after {
   background-image: url(../img/ico_accordion_arrow_2.svg);
@@ -1077,6 +1073,9 @@ header.header .contents-wrap {
 }
 .optimized-list .accordion-panel {
   margin-bottom: 0;
+}
+.optimized-list .accordion-panel > ul {
+  padding-top: 1.25rem;
 }
 .optimized-list .accordion-panel > ul li {
   position: relative;
@@ -1614,4 +1613,12 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+.accordion-panel {
+  overflow: hidden;
+  transition: height 0.4s ease-in-out;
+}
+.accordion-panel:not(.show) {
+  display: none;
+  transition: height 0.4s ease-in-out;
 }/*# sourceMappingURL=style.css.map */

@@ -1086,12 +1086,12 @@ section {
         }
       }
       a[aria-expanded='false'] {
-        padding-bottom: 0;
+        // padding-bottom: 0;
       }
       a[aria-expanded='true'] {
         @include txtLabelLarge;
         color: $color-main;
-        padding-bottom: 1.25rem;
+        // padding-bottom: 1.25rem;
         &:after {
           background-image: url(../img/ico_accordion_arrow_2.svg);
         }
@@ -1102,6 +1102,9 @@ section {
     }
   }
   .accordion-panel {
+    > ul {
+      padding-top: 1.25rem;
+    }
     margin-bottom: 0;
     > ul {
       li {
@@ -1671,5 +1674,15 @@ $menuItems: 7;
 
   100% {
     transform: rotate(360deg);
+  }
+}
+.accordion-panel {
+  overflow: hidden;
+  transition: height 0.4s ease-in-out;
+  &:not(.show) {
+    // padding: 0;
+    display: none;
+    transition: height 0.4s ease-in-out;
+    // height: 0;
   }
 }

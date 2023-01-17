@@ -294,11 +294,11 @@
 						<div class="accordion-list optimized-list">
 							<ul>
 								<li>
-									<a data-bs-toggle="collapse" class="btn-accordion" data-bs-target="#accordion-list-1"
-										aria-expanded="true">한 번의 예약
+									<a data-bs-toggle="collapse" class="btn-accordion" aria-expanded="false"
+										data-panel="#accordion-list-1">한 번의 예약
 										신청으로 모든
 										검진 예약</a>
-									<div id="accordion-list-1" class="collapse show accordion-panel" data-bs-parent=".accordion-list">
+									<div id="accordion-list-1" class="accordion-panel" data-bs-parent=".accordion-list">
 										<ul>
 											<li>연기 및 분리 검진 일정 설정 가능</li>
 											<li>기관별 수면 내시경 가능 연령 안내</li>
@@ -306,10 +306,10 @@
 									</div>
 								</li>
 								<li>
-									<a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed btn-accordion"
-										aria-expanded="false">PC 및 Mobile 환경에 최적화
+									<a data-bs-toggle="collapse" class="collapsed btn-accordion" aria-expanded="false"
+										data-panel="#accordion-list-2">PC 및 Mobile 환경에 최적화
 										된 예약 서비스 구현</a>
-									<div id="accordion-list-2" class="collapse accordion-panel" data-bs-parent=".accordion-list">
+									<div id="accordion-list-2" class="accordion-panel" data-bs-parent=".accordion-list">
 										<ul>
 											<li>기업별 예약 사이트 제공</li>
 											<li>검진 기관 및 상품의 비교와 예약부터 온라인 결제까지 한번에</li>
@@ -318,10 +318,10 @@
 								</li>
 
 								<li>
-									<a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed btn-accordion"
-										aria-expanded="false">대표 고객사와 관계 고객사 설정으로
+									<a data-bs-toggle="collapse" class="collapsed btn-accordion" aria-expanded="false"
+										data-panel="#accordion-list-3">대표 고객사와 관계 고객사 설정으로
 										권한별 관리 기능</a>
-									<div id="accordion-list-3" class="collapse accordion-panel" data-bs-parent=".accordion-list">
+									<div id="accordion-list-3" class="accordion-panel" data-bs-parent=".accordion-list">
 										<ul>
 											<li>관계사 담당자의 서비스 접근 권한을 구분하여 제공 가능</li>
 											<li>관계사별 결과 자료를 한 번에 취합하여 제공 가능</li>
@@ -539,12 +539,11 @@
 	<div id="preloader">
 		<div><img src="./img/preloader_02.gif" alt=""></div>
 	</div>
-	<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="lib/swiper/swiper-bundle.min.js"></script>
-	<script src="js/style.js"></script>
 	<script charset="UTF-8" class="daum_roughmap_loader_script"
 		src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+	<script defer src="js/style.js"></script>
 	<script>
 		AOS.init({ once: true, duration: 1000 });
 		const swiper = new Swiper(".partnerSwiper", {
